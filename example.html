@@ -1,0 +1,272 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&display=swap');
+
+.pm-root {
+  font-family: 'DM Mono', monospace;
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.pm-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px 20px;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+.pm-nav-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+}
+.pm-nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.pm-hero {
+  padding: 64px 32px 48px;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+.pm-eyebrow {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.pm-hero-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  margin: 0 0 24px;
+  max-width: 480px;
+}
+.pm-hero-heading em {
+  font-style: italic;
+  color: var(--color-text-secondary);
+}
+.pm-hero-sub {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 360px;
+  margin-bottom: 32px;
+}
+.pm-cta-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.pm-btn-primary {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--color-text-primary);
+  color: var(--color-background-primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.pm-btn-ghost {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: none;
+  color: var(--color-text-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.pm-section {
+  padding: 40px 32px;
+  border-bottom: 0.5px solid var(--color-border-tertiary);
+}
+.pm-section-label {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.pm-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.pm-project-card {
+  border: 0.5px solid var(--color-border-tertiary);
+  padding: 20px;
+  border-radius: 4px;
+}
+.pm-project-tag {
+  font-size: 10px;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.pm-project-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 17px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.pm-project-desc {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+.pm-stack-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.pm-tag {
+  font-size: 10px;
+  background: var(--color-background-secondary);
+  color: var(--color-text-secondary);
+  padding: 4px 10px;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+}
+.pm-about {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 32px;
+  align-items: start;
+}
+.pm-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 2px;
+  background: var(--color-background-secondary);
+  border: 0.5px solid var(--color-border-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: var(--color-text-secondary);
+  margin-bottom: 14px;
+}
+.pm-about-meta {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.9;
+}
+.pm-about-bio {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+.pm-footer {
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+}
+</style>
+
+<div class="pm-root">
+  <h2 class="sr-only">Clean minimalist portfolio design mockup for Kridhay</h2>
+
+  <nav class="pm-nav">
+    <span class="pm-nav-name">Kridhay</span>
+    <div class="pm-nav-links">
+      <span>work</span>
+      <span>about</span>
+      <span>contact</span>
+    </div>
+  </nav>
+
+  <section class="pm-hero">
+    <div class="pm-eyebrow">Backend / Fullstack Engineer — London</div>
+    <h1 class="pm-hero-heading">Building things that <em>ship</em> and scale.</h1>
+    <p class="pm-hero-sub">AWS pipelines, TypeScript, data systems. Currently at Behaviourlab. Aiming for founding engineer.</p>
+    <div class="pm-cta-row">
+      <button class="pm-btn-primary">View work</button>
+      <button class="pm-btn-ghost">Get in touch</button>
+    </div>
+  </section>
+
+  <section class="pm-section">
+    <div class="pm-section-label">Selected projects</div>
+    <div class="pm-projects">
+      <div class="pm-project-card">
+        <div class="pm-project-tag">Data pipeline</div>
+        <div class="pm-project-title">Portfolio Analytics Engine</div>
+        <p class="pm-project-desc">ETL pipeline on AWS Lambda processing real-time portfolio data across 10k+ positions.</p>
+        <div class="pm-stack-row">
+          <span class="pm-tag">Python</span>
+          <span class="pm-tag">Pandas</span>
+          <span class="pm-tag">AWS</span>
+        </div>
+      </div>
+      <div class="pm-project-card">
+        <div class="pm-project-tag">Web app</div>
+        <div class="pm-project-title">Watchlist Tracker</div>
+        <p class="pm-project-desc">Personal movie & TV tracker built with Next.js App Router, RSC, and Vercel.</p>
+        <div class="pm-stack-row">
+          <span class="pm-tag">Next.js</span>
+          <span class="pm-tag">TypeScript</span>
+          <span class="pm-tag">Vercel</span>
+        </div>
+      </div>
+      <div class="pm-project-card">
+        <div class="pm-project-tag">macOS utility</div>
+        <div class="pm-project-title">ClipboardStack</div>
+        <p class="pm-project-desc">Native clipboard history manager for macOS written in Swift.</p>
+        <div class="pm-stack-row">
+          <span class="pm-tag">Swift</span>
+          <span class="pm-tag">macOS</span>
+        </div>
+      </div>
+      <div class="pm-project-card">
+        <div class="pm-project-tag">CLI tool</div>
+        <div class="pm-project-title">Demo Agent</div>
+        <p class="pm-project-desc">Cognito-authenticated CLI agent for populating analytics demo data.</p>
+        <div class="pm-stack-row">
+          <span class="pm-tag">Python</span>
+          <span class="pm-tag">Cognito</span>
+          <span class="pm-tag">AWS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pm-section">
+    <div class="pm-section-label">About</div>
+    <div class="pm-about">
+      <div>
+        <div class="pm-avatar">K</div>
+        <div class="pm-about-meta">
+          Backend dev<br>
+          EE background<br>
+          Python · TS · Swift · Go<br>
+          London, UK
+        </div>
+      </div>
+      <p class="pm-about-bio">I build backend systems and data pipelines at Behaviourlab. Before that, electrical engineering gave me a taste for making real systems work under real constraints. I'm working toward a founding engineer role — the kind where you own the full stack and the product.</p>
+    </div>
+  </section>
+
+  <footer class="pm-footer">
+    <span>kridhay.dev</span>
+    <span>github · linkedin · email</span>
+  </footer>
+</div>
