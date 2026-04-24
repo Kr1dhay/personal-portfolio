@@ -4,7 +4,7 @@ export default function Nav() {
       <div className="max-w-[820px] mx-auto px-12 py-7 flex justify-between items-center">
         <a
           href="#hero"
-          className="font-mono text-[13px] text-[var(--text)] no-underline"
+          className="font-mono text-[13px] sm:text-[14px] text-[var(--text)] no-underline"
         >
           kridhay.xyz
         </a>
@@ -18,7 +18,7 @@ export default function Nav() {
             <li key={href}>
               <a
                 href={href}
-                className="text-[12px] tracking-[0.14em] uppercase text-[var(--text)] no-underline"
+                className="text-[12px] sm:text-[13px] tracking-[0.14em] uppercase text-[var(--text)] no-underline"
               >
                 {label}
               </a>

@@ -102,7 +102,7 @@ export default function ProjectsSection() {
     <>
       <section id="projects">
         <div className="max-w-[820px] mx-auto px-5 sm:px-12 py-12 sm:py-20">
-          <div className="text-[15px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
+          <div className="text-[15px] sm:text-[16px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
             Projects
           </div>
 
@@ -112,20 +112,20 @@ export default function ProjectsSection() {
                 key={project.id}
                 className={`stagger-child d-${i + 1} border border-[0.5px] border-[var(--border)] p-7 pt-7 rounded-[3px] bg-[var(--bg)] transition-all duration-200 hover:bg-[var(--bg2)] hover:border-[var(--text3)] hover:-translate-y-0.5`}
               >
-                <div className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] mb-2.5">
+                <div className="text-[9px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text3)] mb-2.5">
                   {project.category}
                 </div>
-                <div className="font-serif text-[19px] leading-[1.15] tracking-[-0.2px] mb-2.5 text-[var(--text)]">
+                <div className="font-serif text-[19px] sm:text-[21px] leading-[1.15] tracking-[-0.2px] mb-2.5 text-[var(--text)]">
                   {project.title}
                 </div>
-                <p className="text-[11.5px] text-[var(--text2)] leading-[1.7] mb-4">
+                <p className="text-[11.5px] sm:text-[14px] text-[var(--text2)] leading-[1.7] mb-4">
                   {project.summary}
                 </p>
                 <div className="flex flex-wrap gap-1.5 mb-5">
                   {project.stack.slice(0, 3).map((tag) => (
                     <span
                       key={tag}
-                      className="text-[9px] tracking-[0.08em] uppercase bg-[var(--bg2)] text-[var(--text2)] px-2.5 py-1 rounded-[2px]"
+                      className="text-[9px] sm:text-[11px] tracking-[0.08em] uppercase bg-[var(--bg2)] text-[var(--text2)] px-2.5 py-1 rounded-[2px]"
                     >
                       {tag}
                     </span>
@@ -133,7 +133,7 @@ export default function ProjectsSection() {
                 </div>
                 {project.modal ? (
                   <button
-                    className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono cursor-pointer hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors"
+                    className="text-[9px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono cursor-pointer hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors"
                     onClick={() => setActiveId(project.id)}
                   >
                     Expand ↗
@@ -143,7 +143,7 @@ export default function ProjectsSection() {
                     href={project.links[0].href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors no-underline"
+                    className="text-[9px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text3)] border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors no-underline"
                     onClick={() => {}}
                   >
                     {project.links[0].label} ↗
@@ -172,19 +172,19 @@ export default function ProjectsSection() {
             style={{ transform: "translateY(0)", transition: "transform 0.25s" }}
           >
             <button
-              className="absolute top-5 right-6 text-[10px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border-0 cursor-pointer font-mono hover:text-[var(--text)] transition-colors"
+              className="absolute top-5 right-6 text-[10px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border-0 cursor-pointer font-mono hover:text-[var(--text)] transition-colors"
               onClick={() => setActiveId(null)}
             >
               Close ×
             </button>
 
-            <div className="text-[9px] tracking-[0.14em] uppercase text-[var(--text3)] mb-3">
+            <div className="text-[9px] sm:text-[11px] tracking-[0.14em] uppercase text-[var(--text3)] mb-3">
               {activeProject.category}
             </div>
-            <div className="font-serif text-[32px] tracking-[-0.5px] leading-[1.1] mb-5 text-[var(--text)]">
+            <div className="font-serif text-[32px] sm:text-[35px] tracking-[-0.5px] leading-[1.1] mb-5 text-[var(--text)]">
               {activeProject.title}
             </div>
-            <div className="text-[13px] text-[var(--text2)] leading-[1.85] mb-7">
+            <div className="text-[13px] sm:text-[14px] text-[var(--text2)] leading-[1.85] mb-7">
               {activeProject.body.split("\n\n").map((para, i) => (
                 <p key={i} className={i > 0 ? "mt-3.5" : ""}>
                   {para}
@@ -192,28 +192,28 @@ export default function ProjectsSection() {
               ))}
             </div>
 
-            <div className="text-[9px] tracking-[0.14em] uppercase text-[var(--text3)] mb-2.5">
+            <div className="text-[9px] sm:text-[11px] tracking-[0.14em] uppercase text-[var(--text3)] mb-2.5">
               Stack
             </div>
             <div className="flex flex-wrap gap-1.5 mb-6">
               {activeProject.stack.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[9px] tracking-[0.08em] uppercase bg-[var(--bg2)] text-[var(--text2)] px-2.5 py-1 rounded-[2px]"
+                  className="text-[9px] sm:text-[11px] tracking-[0.08em] uppercase bg-[var(--bg2)] text-[var(--text2)] px-2.5 py-1 rounded-[2px]"
                 >
                   {tag}
                 </span>
               ))}
             </div>
 
-            <div className="text-[9px] tracking-[0.14em] uppercase text-[var(--text3)] mb-2.5">
+            <div className="text-[9px] sm:text-[11px] tracking-[0.14em] uppercase text-[var(--text3)] mb-2.5">
               Highlights
             </div>
             <ul className="list-none p-0">
               {activeProject.highlights.map((h) => (
                 <li
                   key={h}
-                  className="text-[12px] text-[var(--text2)] leading-[2] border-l-[1.5px] border-[var(--border)] pl-3 mb-1"
+                  className="text-[12px] sm:text-[13px] text-[var(--text2)] leading-[2] border-l-[1.5px] border-[var(--border)] pl-3 mb-1"
                 >
                   {h}
                 </li>
@@ -228,7 +228,7 @@ export default function ProjectsSection() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[10px] tracking-[0.1em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 hover:text-[var(--text)] transition-colors no-underline"
+                    className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 hover:text-[var(--text)] transition-colors no-underline"
                   >
                     {link.label} ↗
                   </a>

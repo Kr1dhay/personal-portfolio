@@ -29,7 +29,7 @@ export default function WorkSection() {
   return (
     <section id="experience">
       <div className="max-w-[820px] mx-auto px-5 sm:px-12 pt-5 pb-12 sm:pb-20">
-        <div className="reveal text-[15px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
+        <div className="reveal text-[15px] sm:text-[16px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
           Work
         </div>
 
@@ -40,26 +40,26 @@ export default function WorkSection() {
               className={`grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-y-3 sm:gap-x-10 sm:gap-y-0 py-8 border-b-[0.5px] border-[var(--border)]`}
             >
               <div className="reveal-left pt-0.5">
-                <div className="text-[10px] tracking-[0.1em] uppercase text-[var(--text2)] mb-1.5">
+                <div className="text-[10px] sm:text-[14px] tracking-[0.1em] uppercase text-[var(--text2)] mb-1.5">
                   {entry.date}
                 </div>
-                <div className="text-[11px] text-[var(--text2)] tracking-[0.04em]">
+                <div className="text-[11px] sm:text-[14px] text-[var(--text2)] tracking-[0.04em]">
                   {entry.company}
                 </div>
               </div>
 
               <div className="reveal">
-                <div className="font-serif text-[20px] tracking-[-0.3px] leading-[1.2] mb-3 text-[var(--text)]">
+                <div className="font-serif text-[20px] sm:text-[22px] tracking-[-0.3px] leading-[1.2] mb-3 text-[var(--text)]">
                   {entry.title}
                 </div>
-                <p className="text-[12px] text-[var(--text2)] leading-[1.8] mb-3.5">
+                <p className="text-[12px] sm:text-[14px] text-[var(--text2)] leading-[1.8] mb-3.5">
                   {entry.description}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
                   {entry.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="text-[9px] tracking-[0.08em] uppercase bg-[var(--bg2)] text-[var(--text2)] px-2.5 py-1 rounded-[2px]"
+                      className="text-[9px] sm:text-[10px] tracking-[0.08em] uppercase bg-[var(--bg2)] text-[var(--text2)] px-2.5 py-1 rounded-[2px]"
                     >
                       {tag}
                     </span>
