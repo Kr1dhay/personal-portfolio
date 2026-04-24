@@ -6,14 +6,14 @@ export default function Hero() {
       </div>
 
       <div className="mt-2">
-        <div className="hero-line">
-          <span className="hero-line-inner font-serif text-[clamp(52px,8vw,88px)] leading-none tracking-[-2px] text-[var(--text)]">
-            Kridhay
+        <div className="hero-line pb-3">
+          <span className="hero-line-inner font-serif text-[clamp(36px,5.5vw,62px)] leading-none tracking-[-2px] text-[var(--text)]">
+            Kridhay Mahesh
           </span>
         </div>
       </div>
 
-      <div className="reveal d-2 text-[13px] text-[var(--text2)] tracking-[0.04em] mb-10" style={{ marginTop: 40 }}>
+      <div className="reveal d-2 text-[13px] text-[var(--text2)] tracking-[0.04em] mb-10" style={{ marginTop: 16 }}>
         Forward-Deployed Software Engineer
       </div>
 

@@ -6,7 +6,7 @@ export default function PersonalSection() {
           Personal
         </div>
 
-        <div className="reveal max-w-[560px]">
+        <div className="reveal">
           <p className="text-[13px] text-[var(--text2)] leading-[1.9]">
             I build backend systems and data pipelines. Before software, electrical engineering gave me a taste for making real systems work under real constraints — tight loops, edge cases, things that break in the field.
           </p>
