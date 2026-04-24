@@ -18,8 +18,8 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kridhay — Software Engineer",
-  description: "Backend & Fullstack Software Engineer based in London.",
+  title: "kridhay",
+  description: "Kridhay's Personal Portfolio",
 };
 
 export default function RootLayout({

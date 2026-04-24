@@ -11,6 +11,7 @@ interface Project {
   stack: string[];
   highlights: string[];
   links: { label: string; href: string }[];
+  modal: boolean;
 }
 
 const projects: Project[] = [
@@ -27,6 +28,7 @@ const projects: Project[] = [
       "Multi-custodian normalisation",
     ],
     links: [{ label: "GitHub", href: "#" }],
+    modal: true,
   },
   {
     id: "p2",
@@ -44,6 +46,7 @@ const projects: Project[] = [
       { label: "GitHub", href: "#" },
       { label: "Live demo", href: "#" },
     ],
+    modal: false,
   },
   {
     id: "p3",
@@ -58,6 +61,7 @@ const projects: Project[] = [
       "Fuzzy search + quick paste",
     ],
     links: [{ label: "GitHub", href: "#" }],
+    modal: false,
   },
   {
     id: "p4",
@@ -72,6 +76,7 @@ const projects: Project[] = [
       "Multi-environment targeting",
     ],
     links: [{ label: "Private repo", href: "#" }],
+    modal: false,
   },
 ];
 
@@ -95,9 +100,9 @@ export default function ProjectsSection() {
 
   return (
     <>
-      <section id="projects" className="border-b border-[0.5px] border-[var(--border)]">
+      <section id="projects">
         <div className="max-w-[820px] mx-auto px-12 py-20">
-          <div className="text-[10px] tracking-[0.16em] uppercase text-[var(--text3)] mb-12">
+          <div className="text-[15px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
             Projects
           </div>
 
@@ -105,8 +110,7 @@ export default function ProjectsSection() {
             {projects.map((project, i) => (
               <div
                 key={project.id}
-                className={`stagger-child d-${i + 1} border border-[0.5px] border-[var(--border)] p-7 pt-7 rounded-[3px] bg-[var(--bg)] cursor-pointer transition-all duration-200 hover:bg-[var(--bg2)] hover:border-[var(--text3)] hover:-translate-y-0.5`}
-                onClick={() => setActiveId(project.id)}
+                className={`stagger-child d-${i + 1} border border-[0.5px] border-[var(--border)] p-7 pt-7 rounded-[3px] bg-[var(--bg)] transition-all duration-200 hover:bg-[var(--bg2)] hover:border-[var(--text3)] hover:-translate-y-0.5`}
               >
                 <div className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] mb-2.5">
                   {project.category}
@@ -127,15 +131,24 @@ export default function ProjectsSection() {
                     </span>
                   ))}
                 </div>
-                <button
-                  className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono cursor-pointer hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setActiveId(project.id);
-                  }}
-                >
-                  Expand ↗
-                </button>
+                {project.modal ? (
+                  <button
+                    className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono cursor-pointer hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors"
+                    onClick={() => setActiveId(project.id)}
+                  >
+                    Expand ↗
+                  </button>
+                ) : (
+                  <a
+                    href={project.links[0].href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[9px] tracking-[0.12em] uppercase text-[var(--text3)] border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors no-underline"
+                    onClick={() => {}}
+                  >
+                    {project.links[0].label} ↗
+                  </a>
+                )}
               </div>
             ))}
           </div>

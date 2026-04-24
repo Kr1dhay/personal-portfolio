@@ -19,9 +19,9 @@ const educationEntries = [
 
 export default function EducationSection() {
   return (
-    <section id="education" className="border-b border-[0.5px] border-[var(--border)]">
+    <section id="education">
       <div className="max-w-[820px] mx-auto px-12 py-20">
-        <div className="reveal text-[10px] tracking-[0.16em] uppercase text-[var(--text3)] mb-12">
+        <div className="reveal text-[15px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
           Education
         </div>
 
@@ -29,10 +29,10 @@ export default function EducationSection() {
           {educationEntries.map((entry, i) => (
             <div
               key={entry.institution}
-              className={`grid grid-cols-[180px_1fr] gap-x-10 py-8 border-t border-[0.5px] border-[var(--border)] ${i === 0 ? "border-t-0 pt-0" : ""}`}
+              className={`grid grid-cols-[180px_1fr] gap-x-10 py-8 border-b-[0.5px] border-[var(--border)]`}
             >
               <div className="reveal-left pt-0.5">
-                <div className="text-[10px] tracking-[0.1em] uppercase text-[var(--text3)] mb-1.5">
+                <div className="text-[10px] tracking-[0.1em] uppercase text-[var(--text2)] mb-1.5">
                   {entry.date}
                 </div>
                 <div className="text-[11px] text-[var(--text2)] tracking-[0.04em]">
