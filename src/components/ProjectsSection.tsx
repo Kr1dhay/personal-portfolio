@@ -101,12 +101,12 @@ export default function ProjectsSection() {
   return (
     <>
       <section id="projects">
-        <div className="max-w-[820px] mx-auto px-12 py-20">
+        <div className="max-w-[820px] mx-auto px-5 sm:px-12 py-12 sm:py-20">
           <div className="text-[15px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
             Projects
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {projects.map((project, i) => (
               <div
                 key={project.id}

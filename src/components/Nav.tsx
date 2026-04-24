@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <nav className="border-b border-[0.5px] border-[var(--border)]">
+    <nav className="hidden sm:block border-b border-[0.5px] border-[var(--border)]">
       <div className="max-w-[820px] mx-auto px-12 py-7 flex justify-between items-center">
         <a
           href="#hero"

@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div className="max-w-[820px] mx-auto px-12" style={{ paddingTop: 100, paddingBottom: 60 }}>
+    <div className="max-w-[820px] mx-auto px-5 sm:px-12 pt-16 sm:pt-25 pb-10 sm:pb-15">
       <div className="reveal text-[11px] tracking-[0.12em] uppercase text-[var(--text2)] mb-6">
         London, UK
       </div>
