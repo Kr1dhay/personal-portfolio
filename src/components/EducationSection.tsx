@@ -3,7 +3,7 @@ const educationEntries = [
     date: "2021 — 2025",
     institution: "Imperial College London",
     degree: "MEng Electronic and Information Engineering",
-    description: "I took part in the Muay Thai society and served as Head of Corporate Relations for the Algorithmic Trading society during my time at Imperial.  I graduated with First Class Honours",
+    description: "I took part in the Muay Thai Society and served as Head of Corporate Relations for the Algorithmic Trading Society during my time at Imperial.  I graduated with First Class Honours",
     tags: ["C++", "Computer Architecture", "Machine Learning", "Signal Processing"],
   },
   {

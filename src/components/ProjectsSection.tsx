@@ -20,12 +20,13 @@ const projects: Project[] = [
     category: "Research — MEng Thesis",
     title: "Interpretable Medical Models",
     summary: "Novel Symbolic Regression approaches for interpretable prognostic models in SICH patients.",
-    body: "My MEng thesis at Imperial College London developed interpretable models for prognosticating outcomes in patients with spontaneous intracerebral haemorrhage (SICH) — a high-stakes clinical domain where transparency is as important as accuracy.\n\nAdapted frameworks from existing research and implemented novel Symbolic Regression approaches as an interpretable alternative to black-box ML. Benchmarked against traditional ML techniques and existing clinical scoring systems to validate that SR models are competitive in both performance and interpretability.",
-    stack: ["Python", "Symbolic Regression", "Machine Learning", "scikit-learn"],
+    body: "Clinical scoring systems are often preferred by clinicians for predicting outcomes. This is because they directly relate each feature to a score and are developed using classical statistical techniques, which means that the systems are interpretable, rationally developed, and trustworthy. Machine Learning methods have been shown to outperform classical methods for a variety of clinical tasks, however due to their black-box behaviour, clinicians find them harder to trust. Symbolic Regression is a process to search for a mathematical expression to fit a dataset. I explored the use of Symbolic Regression techniques, namely Symbolic Boolean Regression (SBR) and Symbolic Regression Enhanced Decision Trees (SREDT), to develop interpretable models for the prognostication of outcomes in 3 clinical datasets. Traditional Machine Learning models, explainability frameworks, and existing clinical scoring systems were also applied to evaluate the competitiveness of the Symbolic Regression techniques. The trade-off between predictive power and interpretability was investigated for all developed models in order to determine the most suitable models for clinical application. The study showed that SBR and SREDT were competitive with existing clinical scoring systems, outperforming them in some cases while maintaining relative interpretability. This work is currently being developed towards publication at ML4H, so the code is not publicly available at this stage.",
+    stack: ["Python", "Symbolic Regression", "Machine Learning"],
     highlights: [
       "Novel SR framework implementation",
       "Benchmarked vs traditional ML & clinical scoring systems",
-      "Interpretable prognostic models for SICH",
+      "Interpretable prognostic models for SICH patients",
+      "Collaboration with clinicians at NUHS",
     ],
     links: [],
     modal: true,
@@ -42,7 +43,7 @@ const projects: Project[] = [
       "RISC-V assembly code generation",
       "Group project — Dec 2022–Mar 2023",
     ],
-    links: [{ label: "GitHub", href: "#" }],
+    links: [{ label: "GitHub", href: "https://github.com/Kr1dhay/Ccompiler" }],
     modal: false,
   },
   {
@@ -57,19 +58,19 @@ const projects: Project[] = [
       "Reduced ISA implementation",
       "Group project — Dec 2022–Mar 2023",
     ],
-    links: [{ label: "GitHub", href: "#" }],
+    links: [{ label: "GitHub", href: "https://github.com/Kr1dhay/riscv_v1" }],
     modal: false,
   },
   {
     id: "p4",
     category: "Blockchain",
-    title: "Blockchain dApp",
-    summary: "",
+    title: "NFT Watch Marketplace",
+    summary: "An authentication platform for luxury watches, minting ERC-721 NFTs tied to individual watch serial numbers to create ownership history",
     body: "",
-    stack: [],
+    stack: ["Solidity", "Ethereum", "Hardhat", "React"],
     highlights: [],
-    links: [],
-    modal: true,
+    links: [{ label: "GitHub", href: "https://github.com/Kr1dhay/nft-watch-Dapp" }],
+    modal: false,
   },
 ];
 
@@ -96,7 +97,7 @@ export default function ProjectsSection() {
       <section id="projects">
         <div className="max-w-[820px] mx-auto px-5 sm:px-12 py-12 sm:py-20">
           <div className="text-[15px] sm:text-[16px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
-            Projects
+            Featured Projects
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

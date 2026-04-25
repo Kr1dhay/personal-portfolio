@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="reveal d-3 flex gap-5">
         <a
-          href="https://github.com/kridhay"
+          href="https://github.com/Kr1dhay"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[10px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 pl-0.5 hover:text-[var(--text)] hover:border-[var(--text)] transition-colors no-underline"
@@ -27,7 +27,7 @@ export default function Hero() {
           GitHub ↗
         </a>
         <a
-          href="https://linkedin.com/in/kridhay"
+          href="https://www.linkedin.com/in/kridhay/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[10px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 pl-0.5 hover:text-[var(--text)] hover:border-[var(--text)] transition-colors no-underline"

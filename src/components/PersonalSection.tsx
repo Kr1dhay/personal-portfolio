@@ -8,7 +8,7 @@ export default function PersonalSection() {
 
         <div className="reveal">
           <p className="text-[13px] sm:text-[14px] text-[var(--text2)] leading-[1.9] mt-4">
-            Outside of work I train Muay Thai and weightlifting.  I also recently have gotten into golf, and I (sometimes) play the guitar.
+            Outside of work I train muay thai and weightlifting.  I also recently have gotten into golf, and I (sometimes) play the guitar.
           </p>
         </div>
       </div>
