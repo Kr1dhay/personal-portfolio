@@ -47,7 +47,7 @@ export default function WorkSection() {
               className={`grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-y-3 sm:gap-x-10 sm:gap-y-0 py-8 border-b-[0.5px] border-[var(--border)]`}
             >
               <div className="reveal-left pt-0.5">
-                <div className="text-[10px] sm:text-[14px] tracking-[0.1em] uppercase text-[var(--text2)] mb-1.5">
+                <div className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--text2)] mb-1.5">
                   {entry.date}
                 </div>
                 <div className="text-[11px] sm:text-[14px] text-[var(--text2)] tracking-[0.04em]">

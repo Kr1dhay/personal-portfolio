@@ -130,7 +130,7 @@ export default function ProjectsSection() {
                     className="text-[9px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text3)] bg-transparent border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono cursor-pointer hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors"
                     onClick={() => setActiveId(project.id)}
                   >
-                    Expand ↗
+                    Expand
                   </button>
                 ) : (
                   <a
