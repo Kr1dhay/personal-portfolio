@@ -7,14 +7,8 @@ export default function PersonalSection() {
         </div>
 
         <div className="reveal">
-          <p className="text-[13px] sm:text-[14px] text-[var(--text2)] leading-[1.9]">
-            I build backend systems and data pipelines. Before software, electrical engineering gave me a taste for making real systems work under real constraints — tight loops, edge cases, things that break in the field.
-          </p>
           <p className="text-[13px] sm:text-[14px] text-[var(--text2)] leading-[1.9] mt-4">
-            Outside of work: I follow Formula 1 more closely than is probably healthy, enjoy a good espresso, and occasionally disappear into a Swift project I&apos;ll never ship.
-          </p>
-          <p className="text-[13px] sm:text-[14px] text-[var(--text2)] leading-[1.9] mt-4">
-            Working toward a founding engineer role — the kind where you own the full stack, make real product decisions, and feel the stakes.
+            Outside of work I train Muay Thai and weightlifting.  I also recently have gotten into golf, and I (sometimes) play the guitar.
           </p>
         </div>
       </div>

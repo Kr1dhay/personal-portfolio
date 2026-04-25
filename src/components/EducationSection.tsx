@@ -1,19 +1,18 @@
 const educationEntries = [
   {
-    date: "2018 — 2021",
-    institution: "University of Leeds",
-    degree: "BEng Electrical & Electronic Engineering",
-    description:
-      "Focus on digital systems, signal processing, and embedded programming. Dissertation on real-time signal classification using ML models deployed on edge hardware. First class honours.",
-    tags: ["Embedded C", "MATLAB", "Digital Systems", "Machine Learning"],
+    date: "2021 — 2025",
+    institution: "Imperial College London",
+    degree: "MEng Electronic and Information Engineering",
+    description: "I took part in the Muay Thai society and served as Head of Corporate Relations for the Algorithmic Trading society during my time at Imperial.  I graduated with First Class Honours",
+    tags: ["C++", "Computer Architecture", "Machine Learning", "Signal Processing"],
   },
   {
-    date: "2016 — 2018",
-    institution: "Sixth Form",
-    degree: "A-Levels",
+    date: "2024 — 2025",
+    institution: "National University of Singapore",
+    degree: "MEng Electrical and Computer Engineering (Exchange)",
     description:
-      "Mathematics (A*), Further Mathematics (A), Physics (A). Foundation for engineering and problem-solving that still shapes how I approach systems design.",
-    tags: [],
+      "Completed my final year at NUS. Living in Singapore was a great experience and the semester breaks gave me the chance to travel across Southeast Asia.",
+    tags: ["Rust", "Computer Security", "Artificial Intelligence"],
   },
 ];
 

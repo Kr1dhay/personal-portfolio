@@ -1,27 +1,34 @@
 const workEntries = [
   {
-    date: "2023 — Present",
-    company: "Behaviourlab",
-    title: "Software Engineer",
-    description:
-      "Building data pipelines and analytics infrastructure for behavioural finance products. Own the full backend stack — AWS Lambda, SQS, RDS — and contributed features across the TypeScript frontend. Shipping to a growing base of fund managers and portfolio analysts.",
-    tags: ["Python", "TypeScript", "AWS", "PostgreSQL", "Next.js"],
+    date: "Sep 2025 — Present",
+    company: "Behaviour Lab",
+    title: "Forward-Deployed Software Engineer",
+    // description: "At Behaviour Lab I work across both the software engineering and advisory teams, to support clients while also shipping production code. I work end-to-end across backend services, databases and infra (with some frontend work occasionally too). I've built custom signal processing algorithms in Pandas tailored to individual fund structures, migrated a large client specific service into a modular feature based architecture, and designed an async polling system on AWS Lambda that replaced a full-day manual process entirely.  Lately I've been building LLM agents with tools to make authenticated internal API calls in order to automate workflows inside the product.",
+    description: "At Behaviour Lab I work across both the software engineering and advisory teams, to support clients while also shipping production code. I work end-to-end across backend services, databases and infra (with some frontend work occasionally too).",
+    tags: ["Python", "AWS", "TypeScript", "Next.js", "SQL"],
   },
   {
-    date: "2022 — 2023",
-    company: "Freelance",
-    title: "Backend Developer",
+    date: "Apr 2024 — Aug 2024",
+    company: "Behaviour Lab",
+    title: "Forward-Deployed Software Engineer Intern",
     description:
-      "Contract work across early-stage startups. Built REST APIs, serverless event-driven services, and internal tooling. Worked closely with founding teams to scope and ship fast.",
-    tags: ["Node.js", "Python", "Serverless", "AWS"],
+      "A five-month placement at a fintech startup. I got handed real problems early and found this job very rewarding, leading me to decide to return after I graduated.",
+    tags: ["Python", "Pandas", "Pydantic", "Pandera"],
   },
   {
-    date: "2021 — 2022",
-    company: "Accenture",
-    title: "Technology Analyst",
+    date: "Oct 2023 — May 2024",
+    company: "Imperial College London",
+    title: "Undergraduate Teaching Assistant",
     description:
-      "Graduate programme. Rotated across cloud migration projects and data engineering workstreams for enterprise clients. Gained hands-on experience with large-scale ETL and infrastructure-as-code.",
-    tags: ["Azure", "SQL", "Terraform", "Python"],
+      "Worked as a UTA for Imperial's C++ Programming module, running weekly tutorial sessions for first-year undergraduates during my third year.",
+    tags: ["C++"],
+  },
+  {
+    date: "Jun 2023 — Aug 2023",
+    company: "Citi",
+    title: "ICG Summer Technology Analyst",
+    description: "I worked in the Commodities technology team, where I built a monitoring dashboard to visualise usage and performance statistics of the Pricer application.  I received a full-time return offer at the end of the internship.",
+    tags: ["TypeScript", "Grafana", "InfluxDB"],
   },
 ];
 
@@ -36,7 +43,7 @@ export default function WorkSection() {
         <div className="flex flex-col">
           {workEntries.map((entry, i) => (
             <div
-              key={entry.company}
+              key={i}
               className={`grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-y-3 sm:gap-x-10 sm:gap-y-0 py-8 border-b-[0.5px] border-[var(--border)]`}
             >
               <div className="reveal-left pt-0.5">

@@ -18,8 +18,8 @@ export default function Home() {
           <HeroAnimator />
         </section>
         <WorkSection />
-        <EducationSection />
         <ProjectsSection />
+        <EducationSection />
         <PersonalSection />
       </main>
       <Footer />
