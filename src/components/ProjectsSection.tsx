@@ -65,7 +65,7 @@ const projects: Project[] = [
     id: "p4",
     category: "Blockchain",
     title: "NFT Watch Marketplace",
-    summary: "An authentication platform for luxury watches, minting ERC-721 NFTs tied to individual watch serial numbers to create ownership history",
+    summary: "An authentication platform for luxury watches, minting ERC-721 NFTs tied to individual watch serial numbers to create ownership history.",
     body: "",
     stack: ["Solidity", "Ethereum", "Hardhat", "React"],
     highlights: [],
