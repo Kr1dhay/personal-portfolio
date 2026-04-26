@@ -140,7 +140,7 @@ export default function ProjectsSection() {
                     className="text-[9px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text3)] border border-[0.5px] border-[var(--border)] px-3 py-1.5 rounded-[2px] font-mono hover:text-[var(--text)] hover:border-[var(--text2)] transition-colors no-underline"
                     onClick={() => {}}
                   >
-                    {project.links[0].label} ↗
+                    {project.links[0].label} <span style={{ fontFamily: "system-ui, sans-serif", fontStyle: "normal" }}>{"↗︎"}</span>
                   </a>
                 )}
               </div>
@@ -224,7 +224,7 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="text-[10px] sm:text-[11px] tracking-[0.1em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 hover:text-[var(--text)] transition-colors no-underline"
                   >
-                    {link.label} ↗
+                    {link.label} <span style={{ fontFamily: "system-ui, sans-serif", fontStyle: "normal" }}>{"↗︎"}</span>
                   </a>
                 ))}
               </div>
