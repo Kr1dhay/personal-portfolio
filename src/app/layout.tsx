@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, DM_Mono } from "next/font/google";
+import { DM_Serif_Display, Lora } from "next/font/google";
 import "./globals.css";
 
 const dmSerifDisplay = DM_Serif_Display({
@@ -10,8 +10,9 @@ const dmSerifDisplay = DM_Serif_Display({
   display: "swap",
 });
 
-const dmMono = DM_Mono({
-  weight: ["300", "400", "500"],
+const lora = Lora({
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-dm-mono",
   display: "swap",
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSerifDisplay.variable} ${dmMono.variable} antialiased`}
+      className={`${dmSerifDisplay.variable} ${lora.variable} antialiased`}
     >
       <body>{children}</body>
     </html>
