@@ -96,7 +96,7 @@ export default function ProjectsSection() {
     <>
       <section id="projects">
         <div className="max-w-[820px] mx-auto px-5 sm:px-12 py-12 sm:py-20">
-          <div className="text-[15px] sm:text-[16px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
+          <div className="font-serif text-[15px] sm:text-[16px] tracking-[0.16em] uppercase text-[var(--text)] mb-8 w-fit border-b-[0.5px] border-[var(--border)] pb-1">
             Featured Projects
           </div>
 

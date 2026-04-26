@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Lora } from "next/font/google";
+import { DM_Serif_Display, Lora } from "next/font/google";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  weight: ["400", "500", "600", "700", "800", "900"],
+const dmSerifDisplay = DM_Serif_Display({
+  weight: "400",
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-dm-serif",
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfairDisplay.variable} ${lora.variable} antialiased`}
+      className={`${dmSerifDisplay.variable} ${lora.variable} antialiased`}
     >
       <body>{children}</body>
     </html>
