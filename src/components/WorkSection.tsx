@@ -82,7 +82,7 @@ export default function WorkSection() {
             href="/Kridhay_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[10px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 pl-0.5 hover:text-[var(--text)] hover:border-[var(--text)] transition-colors no-underline"
+            className="text-[13px] sm:text-[15px] tracking-[0.12em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 pl-0.5 hover:text-[var(--text)] hover:border-[var(--text)] transition-colors no-underline"
           >
             Full CV ↗
           </a>
