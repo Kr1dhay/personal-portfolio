@@ -12,7 +12,7 @@ const workEntries = [
     company: "Behaviour Lab",
     title: "Forward-Deployed Software Engineer Intern",
     description:
-      "A five-month placement at a fintech startup. I got handed real problems early and found this job very rewarding, leading me to decide to return after I graduated.",
+      "A five-month placement at a fintech startup. I got handed real problems early and enjoyed the fast-paced nature, leading me to decide to return after I graduated.",
     tags: ["Python", "Pandas", "Pydantic", "Pandera"],
   },
   {
@@ -75,6 +75,17 @@ export default function WorkSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="reveal mt-8">
+          <a
+            href="/Kridhay_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] sm:text-[11px] tracking-[0.12em] uppercase text-[var(--text2)] border-b border-[0.5px] border-[var(--border)] pb-0.5 pl-0.5 hover:text-[var(--text)] hover:border-[var(--text)] transition-colors no-underline"
+          >
+            Full CV ↗
+          </a>
         </div>
       </div>
     </section>
