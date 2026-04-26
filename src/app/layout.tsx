@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, EB_Garamond } from "next/font/google";
+import { Playfair_Display, Lora } from "next/font/google";
 import "./globals.css";
 
-const cormorantGaramond = Cormorant_Garamond({
-  weight: ["300", "400", "500", "600", "700"],
+const playfairDisplay = Playfair_Display({
+  weight: ["400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-dm-serif",
   display: "swap",
 });
 
-const ebGaramond = EB_Garamond({
-  weight: ["400", "500", "600", "700", "800"],
+const lora = Lora({
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-dm-mono",
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorantGaramond.variable} ${ebGaramond.variable} antialiased`}
+      className={`${playfairDisplay.variable} ${lora.variable} antialiased`}
     >
       <body>{children}</body>
     </html>
