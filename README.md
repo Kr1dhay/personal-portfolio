@@ -1,2 +1,2 @@
-[kridhay.xyz
-](https://kridhay.xyz/)
+[kridhay.dev
+](https://kridhay.dev/)

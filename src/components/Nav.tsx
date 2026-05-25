@@ -17,7 +17,7 @@ export default function Nav() {
             transition: "none",
           }}
         >
-          kridhay.xyz
+          kridhay.dev
         </span>
         <ul className="flex gap-9 list-none">
           {[
